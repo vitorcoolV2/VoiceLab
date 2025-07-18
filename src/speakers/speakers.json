@@ -1,0 +1,18 @@
+{
+  "joana": {
+    "name": "joana",
+    "sample_path": "/media/vitor/ssd990/Projects/flows-feedback-loop/coqui-tts/sample.wav",
+    "language": "pt",
+    "metadata": {
+      "gender": "female",
+      "description": "Voz personalizada da Joana"
+    }
+  },
+  "test_speaker": {
+    "voice_sample_path": "/media/vitor/ssd990/Projects/flows-feedback-loop/coqui-tts/src/speakers/test_speaker.wav",
+    "props": {
+      "accent": "pt",
+      "age": "30"
+    }
+  }
+}

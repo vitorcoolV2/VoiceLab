@@ -1,0 +1,23 @@
+{
+  "my_voice": {
+    "voice_sample_path": "output/clone_1752608715_en_demo_voice_sample.wav",
+    "props": {
+      "accent": "en",
+      "age": "30"
+    }
+  },
+  "en_demo": {
+    "voice_sample_path": "/media/vitor/ssd990/Projects/flows-feedback-loop/coqui-tts/downloads/en_demo_en_cloned.wav",
+    "props": {
+      "accent": "en",
+      "description": "English demo voice"
+    }
+  },
+  "joana": {
+    "voice_sample_path": "/media/vitor/ssd990/Projects/flows-feedback-loop/coqui-tts/downloads/en_demo_en_cloned.wav",
+    "props": {
+      "lang": "pt",
+      "desc": "Voz Joana demo"
+    }
+  }
+}

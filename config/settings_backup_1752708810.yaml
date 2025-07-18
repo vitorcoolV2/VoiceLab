@@ -1,0 +1,65 @@
+api:
+  max_text_length: 2000
+  rate_limit: 200
+  timeout: 60
+audio:
+  normalize: true
+  quality: medium
+  sample_rate: 16000
+  trim_silence: true
+logging:
+  backup_count: 5
+  file: ./logs/tts.log
+  format: '{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}'
+  level: INFO
+  max_size: 10MB
+models:
+  auto_download: true
+  cache_dir: /media/vitor/ssd990/ai_models/cache
+  path: /media/vitor/ssd990/home-backup/coqui-models
+output:
+  filename_template: speech_{timestamp}_{hash}.wav
+  max_file_size: 100MB
+  path: /media/vitor/ssd990/home-backup/coqui-outputs
+downloads:
+  path: /media/vitor/ssd990/home-backup/coqui-downloads
+performance:
+  batch_size: 4
+  gpu_memory_fraction: 0.85
+  max_queue_size: 30
+  use_gpu: true
+security:
+  enable_auth: false
+  secret_key: your-secret-key-here
+  token_expiry_hours: 24
+server:
+  debug: false
+  host: 0.0.0.0
+  port: 8000
+  workers: 2
+tts:
+  default_model: tts_models/multilingual/multi-dataset/xtts_v2
+  default_output_format: wav
+  default_pitch: 1.0
+  default_speaker: null
+  default_speed: 1.0
+  default_voice_sample: /secure/flows-feedback-loop/coqui-tts/output6.wav
+  default_voice_style: normal
+  default_volume: 1.0
+  use_default_voice_sample: true
+whisper:
+  available_models:
+  - tiny
+  - base
+  - small
+  - medium
+  - large
+  - large-v2
+  compression_ratio_threshold: 2.4
+  default_model: tiny
+  force_cpu: false
+  language_detection: true
+  logprob_threshold: -1.0
+  no_speech_threshold: 0.6
+  temperature: 0.0
+  word_timestamps: false

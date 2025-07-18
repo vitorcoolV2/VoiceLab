@@ -1,0 +1,40 @@
+name: coqui-tts
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - numpy=2.2  # Fixado para compatibilidade com numba/TTS
+  - pandas
+  - scikit-learn
+  - librosa
+  - pip
+  - ffmpeg
+  - sox
+  - pip:
+      - TTS>=0.22.0
+      - whisper
+      - faster-whisper
+      - yt_dlp
+      - pytest
+      - playsound
+      - fastapi
+      - uvicorn
+      - loguru
+      - python-multipart
+      - pyyaml
+      - pydantic
+      - torch==2.5.1
+      - transformers==4.39.3
+      - sentencepiece
+      - protobuf
+      - requests
+      - tqdm
+      - soundfile
+      - resampy
+      - unidecode
+      - phonemizer
+      - coqpit
+      - tensorboard
+      - matplotlib
+      - seaborn 
